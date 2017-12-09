@@ -1,0 +1,27 @@
+{
+  "name": "catmull-rom-interpolator",
+  "version": "1.0.0",
+  "description": "Interpolates polygons using Catmull-Rom splines",
+  "main": "catmull-rom-interpolator.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rciszek/catmull-rom-interpolator.git"
+  },
+  "keywords": [
+    "interpolation"
+  ],
+  "author": "rciszek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rciszek/catmull-rom-interpolator/issues"
+  },
+  "homepage": "https://github.com/rciszek/catmull-rom-interpolator#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {}
+}
