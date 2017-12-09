@@ -133,5 +133,3 @@ function arrayTo2d(array, m) {
 	}
 	return matrix;
 }
-
-console.log(module.exports([[0,1],[1,2],[2,-1],[3,1],[4,5]], 0, 2, false ))
