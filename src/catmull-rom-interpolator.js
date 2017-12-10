@@ -15,9 +15,7 @@ Parameters:
 Returns:
 	Interpolated coordinates as a two dimensional array.
 */
-
 'use strict';
-
 module.exports = function catmulRomInterpolation(coordinates, alpha=0, resolution=10, isPolygon=false) {
 
 
@@ -94,19 +92,18 @@ module.exports = function catmulRomInterpolation(coordinates, alpha=0, resolutio
 	}
 	//For line, add the end point
 	if (!isPolygon) {
-		interpolated[interpolationIndex++] = coordinates[coordinates.length - 2][0]
-		interpolated[interpolationIndex++] = coordinates[coordinates.length - 2][1]
+		interpolated[interpolationIndex++] = coordinates[coordinates.length - 2][0];
+		interpolated[interpolationIndex++] = coordinates[coordinates.length - 2][1];
 	}
 
 	//Transform result array to 2d array
 	return arrayTo2d(interpolated,2);
-}
+};
 
 
 //Perform linear interpolation from value p1 to value p2. Parameter 'resolution' sets the number of interpolated points.
 function linearInterpolation( p1,p2,resolution ) {
 
-	var resolution = resolution;
 	//Pre-allocate array for the results.
 	var interpolated = new Float32Array(resolution+1);
 	interpolated[0] = p1;
