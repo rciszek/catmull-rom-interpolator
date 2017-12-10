@@ -1,6 +1,6 @@
 {
   "name": "catmull-rom-interpolator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interpolates polygons using Catmull-Rom splines",
   "main": "src/catmull-rom-interpolator.js",
   "unpkg": "dist/catmull-rom-interpolator.min.js",
